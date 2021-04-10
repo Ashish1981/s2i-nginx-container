@@ -1,11 +1,11 @@
 # s2i-nginx-container
-FROM centos/s2i-base-centos7
+FROM registry.access.redhat.com/rhscl/s2i-base-rhel7
 
 EXPOSE 8080
 
 LABEL maintainer="elementsweb"
 
-ENV NGINX_VERSION=1.12.1 \
+ENV NGINX_VERSION=1.9.9 \
     NAME=nginx
 
 ENV SUMMARY="Platform for running Nginx web server to host assets" \
